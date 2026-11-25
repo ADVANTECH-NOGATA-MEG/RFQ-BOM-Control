@@ -1,0 +1,132 @@
+[
+  {
+    "id": "int_1780290787461_7771",
+    "step": "erpSync",
+    "ok": true,
+    "ts": "2026-06-01T05:13:07.462Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290788845_6831",
+    "step": "quoteToSo",
+    "ok": true,
+    "ts": "2026-06-01T05:13:08.845Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "approvedBy": "Administrator"
+    }
+  },
+  {
+    "id": "int_1780290790247_569",
+    "step": "biExport",
+    "ok": true,
+    "ts": "2026-06-01T05:13:10.247Z",
+    "payload": {
+      "range": "last_30_days",
+      "format": "csv"
+    }
+  },
+  {
+    "id": "int_1780290792020_6593",
+    "step": "crmSync",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.020Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290792021_4475",
+    "step": "erpSync",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.021Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290792023_76",
+    "step": "plmPdmSync",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.023Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290792025_2765",
+    "step": "quoteToSo",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.025Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290792027_3934",
+    "step": "contractLinkage",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.027Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290792028_853",
+    "step": "eSign",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.028Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290792030_5233",
+    "step": "ssoAd",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.030Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290792032_566",
+    "step": "webhookBus",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.032Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290792034_3191",
+    "step": "biExport",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.034Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  },
+  {
+    "id": "int_1780290792035_6615",
+    "step": "mailServerSync",
+    "ok": true,
+    "ts": "2026-06-01T05:13:12.035Z",
+    "payload": {
+      "quoteId": "RFQ-20260529-001",
+      "version": "V1"
+    }
+  }
+]

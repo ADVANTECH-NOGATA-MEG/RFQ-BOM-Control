@@ -1,0 +1,90 @@
+[
+  {
+    "id": "admin",
+    "name": "Admin",
+    "permissions": {
+      "canEditRFQ": true,
+      "canDeleteRFQ": true,
+      "canManageUsers": true,
+      "canManageRoles": true,
+      "canAccessAuditLog": true,
+      "canViewMaterials": true,
+      "canEditMaterials": true,
+      "canManageBOM": true,
+      "canViewRFQ": true,
+      "canViewBOM": true,
+      "canViewPrices": true,
+      "canApproveLevel1": true,
+      "canApproveLevel2": true,
+      "canApproveLevel3": true,
+      "canFinalizeApproval": true,
+      "canRejectRFQ": true
+    }
+  },
+  {
+    "id": "pm",
+    "name": "PM",
+    "permissions": {
+      "canEditRFQ": true,
+      "canDeleteRFQ": false,
+      "canManageUsers": false,
+      "canManageRoles": false,
+      "canAccessAuditLog": true,
+      "canViewMaterials": true,
+      "canEditMaterials": true,
+      "canManageBOM": true,
+      "canViewRFQ": true,
+      "canViewBOM": true,
+      "canViewPrices": true,
+      "canApproveLevel1": true,
+      "canApproveLevel2": false,
+      "canApproveLevel3": false,
+      "canFinalizeApproval": false,
+      "canRejectRFQ": true
+    }
+  },
+  {
+    "id": "user",
+    "name": "User",
+    "permissions": {
+      "canEditRFQ": true,
+      "canDeleteRFQ": false,
+      "canManageUsers": false,
+      "canManageRoles": false,
+      "canAccessAuditLog": true,
+      "canViewMaterials": true,
+      "canEditMaterials": true,
+      "canManageBOM": false,
+      "canViewRFQ": true,
+      "canViewBOM": true,
+      "canViewPrices": true,
+      "canApproveLevel1": false,
+      "canApproveLevel2": false,
+      "canApproveLevel3": false,
+      "canFinalizeApproval": false,
+      "canRejectRFQ": false
+    }
+  },
+  {
+    "id": "viewer",
+    "name": "Viewer",
+    "permissions": {
+      "canEditRFQ": false,
+      "canDeleteRFQ": false,
+      "canManageUsers": false,
+      "canManageRoles": false,
+      "canAccessAuditLog": false,
+      "canViewMaterials": true,
+      "canEditMaterials": false,
+      "canManageBOM": false,
+      "canViewRFQ": true,
+      "canViewBOM": true,
+      "canViewPrices": false,
+      "canApproveLevel1": false,
+      "canApproveLevel2": false,
+      "canApproveLevel3": false,
+      "canFinalizeApproval": false,
+      "canRejectRFQ": false
+    }
+  }
+]

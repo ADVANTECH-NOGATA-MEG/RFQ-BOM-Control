@@ -1,0 +1,74 @@
+{
+  "name": "rfq-control-system",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "node server/index.mjs",
+    "dev:internal": "concurrently \"node server/index.mjs\" \"cross-env VITE_API_BASE_URL=http://127.0.0.1:3001 vite --host 127.0.0.1 --port 5174 --strictPort\"",
+    "seed:dummy-quotations": "node scripts/seed_dummy_quotations.mjs",
+    "report:coverage": "node scripts/generate_feature_coverage_report.mjs",
+    "report:objective": "node scripts/generate_objective_audit_report.mjs",
+    "report:slo": "node scripts/generate_slo_report.mjs",
+    "report:slo:probe": "node scripts/generate_slo_probe_report.mjs",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"vite --host 127.0.0.1 --port 5174 --strictPort\" \"wait-on http://127.0.0.1:5174 && cross-env VITE_DEV_SERVER_URL=http://127.0.0.1:5174 electron .\"",
+    "electron:build": "vite build && electron-builder",
+    "test": "vitest run --passWithNoTests",
+    "test:all": "vitest run --passWithNoTests",
+    "test:slo": "vitest run --passWithNoTests server/tests/api.slo.test.js src/services/__tests__/latencyMetricsService.test.js",
+    "test:watch": "vitest",
+    "test:i18n": "node scripts/check_i18n_completeness.mjs",
+    "test:load": "node server/tests/load.test.mjs"
+  },
+  "build": {
+    "appId": "com.rfq-control-system.app",
+    "productName": "RFQ Control System",
+    "mac": {
+      "target": "zip"
+    },
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ]
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.98.0",
+    "better-sqlite3": "^12.10.0",
+    "express": "^5.2.1",
+    "lucide-react": "^0.575.0",
+    "node-cron": "^4.2.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^40.6.1",
+    "electron-builder": "^26.8.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "jsdom": "^25.0.1",
+    "vite": "^7.3.1",
+    "vitest": "^2.1.9",
+    "wait-on": "^9.0.4"
+  }
+}

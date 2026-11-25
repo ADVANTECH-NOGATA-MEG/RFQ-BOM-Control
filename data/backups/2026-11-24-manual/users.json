@@ -1,0 +1,11 @@
+[
+  {
+    "id": "usr-admin",
+    "name": "Administrator",
+    "username": "admin",
+    "email": "",
+    "password": "YWRtaW4=",
+    "role": "admin",
+    "created_at": "2026-05-29T02:09:32.385Z"
+  }
+]
